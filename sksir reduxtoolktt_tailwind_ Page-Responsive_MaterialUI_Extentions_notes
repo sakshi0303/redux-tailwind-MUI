@@ -1,0 +1,90 @@
+PAGE RESPONSIVENES--->>>
+width: 12 cols
+col-span:3 *x=parent grid 
+<div className='grid grid-cols-12 gap-2 p-5 bg-black'> ----> PARENT CLASS
+<Card key={i} className='lg:col-span-3 md:col-span-4 sm:col-span-6 col-span-12 m-auto' sx={{ maxWidth: 345 bgcolor:"yellow" }}>---> map element
+
+-----------------------------------------------------------------------------------
+
+Extentions
+> react-hooks-snippet
+>// react hook snippet extension
+>//Tailwind CSS IntelliSense
+>ThunderClient
+>AutoCloseTag
+>AutoCompleteTag
+>AutoRenammeTag
+>ES7+ react/redux/react
+>html  to jsx
+>javascript (ES6) code snippets
+>Material icon theme
+>Prittier ESLInt
+> Prittieer JSON
+>Postman
+>ThunderClient
+-----------------------------------------------------------------------------------
+
+GUTHUB------------
+>GITHUB always create a new project from the browser  github website and then then initialise with the github code of init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/sakshi0303/redux-tailwind-MUI.git
+git push -u origin main
+-----------------------------------------------------------------------------------
+
+
+
+>tailwind download go to ->started, -> installation,->FrameworkGuides ,->Create React App
+    >change config,css and follow steps
+
+-----------------------------------------------------------------------------------
+
+>npx-create-react-app
+>npm i  react-router-dom
+download npm run start
+
+>matrial ui website > get started installation 
+    >default installation npm install @mui/material @emotion/react @emotion/styled
+    > Scroll down and download Icons npm install @mui/icons-material
+
+
+-----------------------------------------------------------------------------------
+
+REACT-REDUX-TOOLKIT COUNTER APP JS
+> ->search for react-redux-toolkit counter app -> npm install @reduxjs/toolkit react-redux-
+>create store folder 
+> import {provider} from 'react-redux'
+> always imoirt <home,hs> in app.jsx and use ush to diplay the API data,(otherwise it wont show)
+> useeffect will run only after the component render everything initally with blank array
+>,Matrial UI : search card and  copy  all import jsx and  paste inside map
+
+
+-> react reduct:
+    -> useDispatch() # state,action and use to call reducer mention in CartSlice=
+    ->in home.jsx
+        ->import { add2cart } from '../store/CartSlice';
+        ->import { useDispatch, useSelector } from 'react-redux';
+            -><Button size="small" onClick={()=>dispatch(add2cart(ele))}>Add to Cart</Button> in home.jsx
+            -> // useSelector will get all store.jsx slices one by one
+                -> let cartStore=useSelector((state)=>state.cart) ; console.log(cartStore);
+    -> IN CartSlice.jsx
+        -> const initialState = {arr: [],}
+        ->  reducers: {
+                    add2cart: (state,action) => {
+                    //inside action.payload we get home.jsx disptach(add2cart) elemement
+                    state.arr=[...state.arr,action.payload]
+                    },
+    -> IN store.jsx
+        export const store = configureStore({
+                reducer: {
+                    cart: CartSlice
+                    },
+                    })
+
+dispact: useDispatch()
+>useselector: callby selectore-> all slice in store
+
+-----------------------------------------------------------------------------------
+--https://www.edamam.com/
+->Dummy json 'https://dummyjson.com/products'
